@@ -62,7 +62,9 @@ btn.addEventListener('click', function () {
         return hiddenBtn('inputed');
     }
     else if(value > 2 && coupon === 'Couple 20'){
-        return alert('Couple can select max seat 2')
+        
+        invalidCoupon.innerText = "";
+        return alert('Couple can select max seat 2');
     }
 
     else if (value !== 4 && coupon === 'NEW15') {
