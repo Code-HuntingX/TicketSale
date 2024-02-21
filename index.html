@@ -184,7 +184,7 @@
             <!-- purchase ticket section  -->
             <section class="grid grid-cols-12 p-8 mt-8 bg-white">
                 <!-- seat  -->
-                <div class="col-span-6 border-r-2 border-dashed px-12 py-8">
+                <div class="col-span-6 border-r-2 border-dashed pr-6 py-8">
                     <h1 class="text-2xl font-semibold raleway">Select your seat</h1>
                     <hr class="border-dashed mt-6 mb-4">
                     <div class="flex justify-between">
@@ -311,7 +311,7 @@
                 </div>
 
                 <!-- payment -->
-                <div class="col-span-6 px-8 py-8 bg-white rounded-lg ml-16">
+                <div class="col-span-6 py-8 bg-white rounded-lg ml-10">
                     <h1 class="text-2xl font-semibold raleway">Order Summary</h1>
                     <hr class="border-dashed my-2">
                     <div class="bg-gray-50 rounded-t-lg">
@@ -344,7 +344,7 @@
                         <div class="flex gap-4 pl-10 w-full ">
                             <input id="inputed" type="text" placeholder="Have any copupon?"
                                 class="input input-bordered w-[85%] max-w-screen relative py-7 border-none rounded-full" />
-                            <button id="apply-btn" class="btn btn-success absolute px-10 ml-[17%] mt-[5px]">Apply</button>
+                            <button id="apply-btn" class="btn btn-success absolute px-10 ml-[21%] text-white rounded-full mt-[5px]" disabled>Apply</button>
                         </div>
 
                         <!-- discount  -->
@@ -364,7 +364,7 @@
                     <div>
                         <div>
                             <div>
-                                <label class="form-control w-full max-w-screen-sm">
+                                <label class="form-control w-full max-w-screen-lg">
                                     <div class="label">
                                         <span class="label-tex text-base font-semibold">Passenger Name*</span>
                                     </div>
@@ -386,8 +386,8 @@
                                         class="input inputing input-bordered w-full max-w-screen-lg" required />
                                 </label>
                             </div>
-                            <button id="next-btn"
-                                class="btn hidden success bg-[#1DD100] text-white raleway mt-10 w-full"
+                            <button disabled id="next-btn"
+                                class="btn success bg-[#1DD100] text-white raleway mt-10 w-full"
                                 onclick="my_modal_4.showModal()">Next</button>
                         </div>
                         <!-- .................... -->
@@ -485,7 +485,7 @@
         }
       
         // Call the function repeatedly every 2 seconds
-        setInterval(changeColor, 100);
+        setInterval(changeColor, 200);
       </script>
 </body>
 

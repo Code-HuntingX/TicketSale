@@ -18,9 +18,10 @@ for (const seats of allSeats) {
 
         if (!setNum.includes(seatNumber)) {
             if (seat >= 4) {
-                return alert('you select maxium of seat')
-    
+                return alert('you select maxium of seat');
+
             }
+            
             setNum.push(seatNumber);
             seat += 1;
             abailabeSeat -= 1;
@@ -34,13 +35,17 @@ for (const seats of allSeats) {
 
 
             //    coupon
-              nextBtn(seat);
             
-           
-              
+            nextBtn(seat);
+            if(seat >= 2){
+                enableBtn('apply-btn');
+            }
+
+            
 
         }
-        else if (setNum.includes(seatNumber)){
+
+        else if (setNum.includes(seatNumber)) {
             const abc = setNum.indexOf(seatNumber)
             const seatValue = setNum[abc];
             console.log(seatValue)
@@ -51,16 +56,18 @@ for (const seats of allSeats) {
             grandPrice.innerText = total;
             setInnerText('seat', seat);
             setInnerText('abailable-seat', abailabeSeat);
-            reSelect(seatNumber, perSeat, total);
+            reSelect(seatNumber, perSeat, total, seat);
             test(setNum, abc);
             // reSelect(seatNumber, perSeat, total);
+          
             
         }
-        
-        // console.log(seat)
-        
 
-})
+        // console.log(seat)
+
+        // hello(seat)
+        
+    })
 
 
 }
@@ -92,6 +99,12 @@ function showBtn(id) {
 
 }
 
+function disableBtn(id){
+    document.getElementById(id).setAttribute('disabled', "true");
+}
+function enableBtn(id){
+    document.getElementById(id).removeAttribute('disabled')
+}
 
 
 // function clickOnces(id) {
