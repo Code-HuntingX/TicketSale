@@ -14,7 +14,7 @@ function reSelect(seat, price, total, totalSeat) {
     const totalPrice = document.getElementById('total-price');
     totalPrice.innerText = total;
     const discount = document.getElementById('discountPrice');
-    discount.innerText = 0;
+    // discount.innerText = 0;
     const inputText = document.getElementById('inputed');
     inputText.value = "";
     showBtn('inputed');

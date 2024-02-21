@@ -22,6 +22,11 @@ function billing(seat, price, total) {
     tr.setAttribute('id', seat + 'trow')
     const totalPrice = document.getElementById('total-price');
     totalPrice.innerText = total;
+    showBtn('inputed');
+    hiddenBtn('discount');
+    showBtn('apply-btn');
+    const inputText = document.getElementById('inputed');
+    inputText.value = "";
     
 
 }

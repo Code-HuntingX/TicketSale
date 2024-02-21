@@ -38,7 +38,7 @@ for (const seats of allSeats) {
             
             nextBtn(seat);
             if(seat >= 2){
-                enableBtn('apply-btn');
+            enableBtn('apply-btn');
             }
 
             
